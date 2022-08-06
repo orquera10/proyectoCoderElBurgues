@@ -158,7 +158,7 @@ header img:hover{
 /* Seccion 2*/
 .seccion2 {
     grid-area: contenido2;
-    background-image: url(/img/banner3.jpg);
+    background-image: url(../img/banner3.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -224,7 +224,7 @@ header img:hover{
     flex-direction: column;
     align-items: center;
     min-height: 90rem;
-    background-image: url(/img/banner4.jpg);
+    background-image: url(../img/banner4.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -279,7 +279,7 @@ header img:hover{
     justify-content: center;
     gap: 2rem;
     grid-area: promo;
-    background-image: url(/img/fondoPromo.jpg);
+    background-image: url(../img/fondoPromo.jpg);
     background-position: center;
     background-size: cover;
     color: #FCC703;
@@ -330,7 +330,7 @@ header img:hover{
     justify-content: center;
     gap: 2rem;
     grid-area: redes;
-    background-image: url(/img/redesFondo.jpg);
+    background-image: url(../img/redesFondo.jpg);
     background-position: center;
     background-size: cover;
     color: white;
@@ -403,7 +403,7 @@ footer p{
 /* estilo pagina de Comida */
 .mainComida{
     
-    background-image: url(/img/fondoComida.jpg);
+    background-image: url(../img/fondoComida.jpg);
     background-size: contain;
     background-attachment: fixed;
     background-position: center;
@@ -438,7 +438,7 @@ footer p{
 }
 /* estilo pagina de Bebida */
 .mainBebida {
-    background-image: url(/img/fondoBebida.jpg);
+    background-image: url(../img/fondoBebida.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -455,7 +455,7 @@ footer p{
 
 /* estilo pagina de Nosotros */
 .mainNosotros{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 16.54%, #FDC619 83.85%), url(/img/fondoNosotros.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 16.54%, #FDC619 83.85%), url(../img/fondoNosotros.jpg);
     background-size:cover;
     display: flex;
     flex-direction: column;
@@ -514,7 +514,7 @@ footer p{
 
 /* estilo pagina de reservas */
 .mainReservas {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(/img/fondoReservas.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondoReservas.jpg);
     background-size:cover;
     display: flex;
     justify-content: center;
@@ -609,7 +609,7 @@ footer p{
 
 /* estilo pagina de Galeria */
 .mainGaleria{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(/img/fondoGaleria.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondoGaleria.jpg);
     background-size:cover;
     background-position: center;
     display: flex;
