@@ -75,26 +75,30 @@ header {
 }
 #btnInicio{
     background-color: #FCC703;
+    border: solid 0.2rem #FCC703;
     color: black;
     font-weight: 500;
     padding: 10px 20px;
     transition: all 1s;
 }
-#btnInicio:hover{
+/* #btnInicio:hover{
     background-color: black;
-    border: solid 0.1rem #FCC703;
+    border: solid 0.2rem #FCC703;
     color:#FCC703;
-}
+} */
 .menuNav a{
     color: white;
     font-weight: 500;
     padding: 10px 20px;
-    transition: all 1s;
+    transition: color 1s;
 }
 .menuNav a:hover{
-    color: black;
+    /* color: black;
     background-color: #FCC703;
-    padding: 10px 20px;
+    padding: 10px 20px; */
+    background-color: black;
+    border-bottom: solid 0.2rem #FCC703;
+    color:#FCC703;
 }
 header img{
     height: 8rem;
