@@ -33,25 +33,25 @@
             <article class="formulario">
                 <h1>Hace tu reserva</h1>
                 <form action=" ">
-                    <div>
-                        <label for="nombre"> Nombre: </label>
-                        <input type="text" name="nombre">
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Nombre</span>
                     </div>
-                    <div>
-                        <label for="apellido"> Apellido: </label>
-                        <input type="text" name="apellido">
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Apellido</span>
                     </div>
-                    <div>
-                        <label for="correo"> Email: </label>
-                        <input type="email" name="correo">
+                    <div class="inputBox">
+                        <input type="email" required="required">
+                        <span>Email</span>
                     </div>
-                    <div>
-                        <label for="fecha"> Fecha: </label>
-                        <input type="date" name="fecha">
-                    </div>
-                    <div>
-                        <label for="comentario">Comentarios:</label>
-                        <textarea name="comentario" rows="10"></textarea><br>
+                    <div class="inputBox">
+                        <input type="date" required="required">
+                        
+                    </div >
+                    <div class="inputBox">
+                        <textarea name="comentario" rows="10" required="required"></textarea>
+                        <span>Comentario</span>
                     </div>
                 </form>
                 <div class="botonesForm">
