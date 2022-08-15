@@ -16,11 +16,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
             <div class="container">
               
               <a href="./index.html" class="navbar-brand">
-                <img src="img/logoBlanco.png" alt="logo Burgues" height="40px">
+                <img src="./img/logoBlanco.png" alt="logo Burgues" class="logoPrincipal">
                 </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,168 +28,225 @@
               <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link text-white" href="./index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link text-white" href="./pages/comida.html">Comida</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link text-white" href="./pages/bebida.html">Bebida</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link text-white" href="./pages/galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./pages/reservas.html">Reservas</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-        <a href="index.html">
-            <img src="img/logoBlanco.png" alt="logo Burgues">
-        </a>
-        <nav class="menuNav">
-            <span><a href="./index.html" id="btnInicio">Inicio</a></span>
-            <span><a href="./pages/comida.html">Comida</a></span>
-            <span><a href="./pages/bebida.html">Tragos</a></span>
-            <span><a href="./pages/galeria.html">Galeria</a></span>
-            <span><a href="./pages/nosotros.html">Nosotros</a></span>
-            <span><a href="./pages/reservas.html">Reservas</a></span>
-        </nav>
     </header>
-    <!-- <main> -->
-    <section class="seccion1">
-        <!--En la primera seccion implementara un carrusel de imagenes con productos del Bar-->
-        <ul>
-            <li>
-                <img src="./img/logoBlanco.png" alt="logo Burgues" class="logoSeccion1">
-                <img src="./img/banner2.jpg" alt="" class="imgCarrusel">
-            </li>
-            <li>
-                <img src="./img/logoBlanco.png" alt="logo Burgues" class="logoSeccion1">
-                <img src="./img/banner1-02.jpg" alt="" class="imgCarrusel">
-            </li>
-            <li>
-                <img src="./img/logoBlanco.png" alt="logo Burgues" class="logoSeccion1">
-                <img src="./img/banner1-03.jpg" alt="" class="imgCarrusel">
-            </li>
-            <li>
-                <img src="./img/logoBlanco.png" alt="logo Burgues" class="logoSeccion1">
-                <img src="./img/banner1-04.jpg" alt="" class="imgCarrusel">
-            </li>
-        </ul>
+    <main>
+    <!--En la primera seccion implementara un carrusel de imagenes con productos del Bar-->
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="position-absolute top-0 start-50 translate-middle">
+                  <img src="./img/logoBlanco.png" alt="logo Burgues" class="logoCarrusel" >
+                </div>
+                <img src="./img/banner2.jpg" class=" imgCarrusel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <div class="position-absolute top-0 start-50 translate-middle">
+                  <img src="./img/logoBlanco.png" alt="logo Burgues" class="logoCarrusel" >
+                </div>
+                <img src="./img/banner1-02.jpg" class="w-100 imgCarrusel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <div class="position-absolute top-0 start-50 translate-middle">
+                  <img src="./img/logoBlanco.png" alt="logo Burgues" class="logoCarrusel" >
+                </div>
+                <img src="./img/banner1-03.jpg" class="imgCarrusel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <div class="position-absolute top-0 start-50 translate-middle">
+                  <img src="./img/logoBlanco.png" alt="logo Burgues" class="logoCarrusel" >
+                </div>
+                <img src="./img/banner1-04.jpg" class=" imgCarrusel" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
-    <section class="seccion2">
-        <!--En la segunda seccion se implementara un carrusel con los diferentes eventos y promociones del Bar-->
-        <div class="seccion2Carrusel">
-            <ul>
-                <li>
-                    <article>
-                        <h2>San Patricio</h2>
-                        <p>¡Obvio mi ciela! No podía ser de otra forma. <br>
-                            Sale un San Patricio furioso en el burgués, lo mejor? <br> La birrita a <span>$200</span>
-                            tooooda la
-                            noche </p>
-                    </article>
-                    <img src="./img/evento1.jpg" alt="imagen evento san patricio">
-                </li>
-                <li>
-                    <article>
-                        <h2>Degustacion Gin Shelby</h2>
-                        <p>Arrancamos el finde con algo muy copado! 🥰
-                            Hoy tenemos degustación de @ginshelby.jujuy en El Burgués! 😉🔥🔥
-                            Los esperamos a las 22hs para disfrutar. </p>
-                    </article>
-                    <img src="./img/evento2.jpg" alt="imagen degustacion gin Shelby">
-                </li>
-                <li>
-                    <article>
-                        <h2>Llego el invierno</h2>
-                        <p>Llegó el invierno y nosotros queremos mantenerte calentito/a 😉
-                            Ahora en El Burgués te esperamos con ambiente climatizado para que disfrutes lo más rico
-                        </p>
-                    </article>
-                    <img src="./img/evento3.jpg" alt="imagen calefaccion del patio">
-                </li>
-            </ul>
+    <!--En la segunda seccion se implementara un carrusel con los diferentes eventos y promociones del Bar-->
+    <section class="container-fluid text-center m-0 p-0">
+      <div class="row m-0">
+        <div class="col-12 col-lg-7 p-4 d-flex align-items-center justify-content-center seccionEventos">
+          <div id="carouselExampleIndicators-2" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row d-flex justify-content-center align-items-center">
+                  <article class="p-3 col-md-6 col-lg-12">
+                    <h2>San Patricio</h2>
+                    <p>¡Obvio mi ciela! No podía ser de otra forma. <br>
+                      Sale un San Patricio furioso en el burgués, lo mejor? <br> La birrita a <span class="fw-bold">$200</span>
+                      tooooda la
+                      noche </p>
+                  </article>
+                  <img src="./img/evento1.jpg" alt="imagen evento san patricio" class="w-50 col-md-6 col-lg-12 p-3">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center align-items-center">
+                  <article class="p-3 col-md-6 col-lg-12">
+                    <h2>Degustacion Gin Shelby</h2>
+                    <p>Arrancamos el finde con algo muy copado! 🥰 <br>
+                      Hoy tenemos degustación de @ginshelby.jujuy en El Burgués! 😉🔥🔥<br>
+                      Los esperamos a las 22hs para disfrutar. </p>
+                  </article>
+                  <img src="./img/evento2.jpg" alt="imagen degustacion gin Shelby" class="w-50 col-md-6 col-lg-12 p-3">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center align-items-center">
+                  <article class="p-3 col-md-6 col-lg-12">
+                    <h2>Llego el invierno</h2>
+                    <p>Llegó el invierno y nosotros queremos mantenerte calentito/a 😉<br>
+                      Ahora en El Burgués te esperamos con ambiente climatizado para que disfrutes lo más rico
+                    </p>
+                  </article>
+                  <img src="./img/evento3.jpg" alt="imagen calefaccion del patio" class="w-50 col-md-6 col-lg-12 p-3">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
+        <div class="row col-12 col-lg-5 m-0 p-0">
+          <div class="col-12 col-md-6 col-lg-12 secPromoDia position-relative p-4">
+            <h2 class="text-white my-2">Burguer del Día</h2>
+            <img src="./img/comida/stacker.png" alt="" class="w-50">
+            <h2 class="text-white">Stacker</h2>
+            <div class="descuento position-absolute bottom-0 end-0 p-4">
+              <h3 class="text-white">20% OFF</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-12 secRedes p-4 d-flex flex-column align-items-center justify-content-center">
+            <h2 class="text-white">Nuestras Redes</h2>
+            <div>
+              <a href="https://www.instagram.com/" target="_blank" class="text-white p-3"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  role="img" width="88" height="88" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                  <path fill="currentColor"
+                    d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z" />
+                </svg></a>
+              <!--icono instagram-->
+              <a href="https://www.facebook.com/" target="_blank" class="text-white p-3"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  role="img" width="70" height="70" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666c.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067Z"
+                    clip-rule="evenodd" />
+                </svg></a>
+              <!--icono facebook-->
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="seccion3">
-        <!--En la tercera seccion se destaca la ubicacion del local-->
-        <div class="mapa">
-
-            <article>
-                <h2>Estamos en</h2>
-                <h1>Av. José de la Iglesia 1780</h1>
-                <p>De Martes a Domingo de 20:30 a 4:00 Hs.</p>
-            </article>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.4559134170427!2d-65.31474848460168!3d-24.190807191023193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f3920ef912d%3A0xfa08b50ecffaf634!2sAv.%20Jos%C3%A9%20de%20la%20Iglesia%201780%2C%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1657810421026!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!--En la tercera seccion se destaca la ubicacion del local-->
+    <section class="seccion3 m-0 px-0 pt-4">
+      <div class="text-white container-fluid text-center m-0 p-0">
+        <div class="mapa row m-0 p-0">
+          <article>
+            <h2>Estamos en</h2>
+            <h1>Av. José de la Iglesia 1780</h1>
+            <p class="fs-5">De Martes a Domingo de 20:30 a 4:00 Hs.</p>
+          </article>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.4559134170427!2d-65.31474848460168!3d-24.190807191023193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f3920ef912d%3A0xfa08b50ecffaf634!2sAv.%20Jos%C3%A9%20de%20la%20Iglesia%201780%2C%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1657810421026!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="m-0 p-0">
+          </iframe>
         </div>
         <!--Enlaces para pedidos que conecta con Whatsapp y enlace de reserva, ambos con iconos-->
-        <div class="botones">
-            <a href="https://wa.me/c/5493884613423" target="_blank" class="btnWp"><svg
-                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" style="vertical-align: -0.125em;"
+        <div class="botones m-0 px-0 py-5 row text-center">
+          <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end">
+            <a href="https://wa.me/c/5493884613423" target="_blank" class="m-2">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" style="vertical-align: -0.125em;"
                     width="39" height="39" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
                     <path fill="black" fill-rule="evenodd"
                         d="M17.415 14.382c-.298-.149-1.759-.867-2.031-.967c-.272-.099-.47-.148-.669.15c-.198.296-.767.966-.94 1.164c-.174.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.019-.458.13-.606c.134-.133.297-.347.446-.52c.149-.174.198-.298.297-.497c.1-.198.05-.371-.025-.52c-.074-.149-.668-1.612-.916-2.207c-.241-.579-.486-.5-.668-.51c-.174-.008-.372-.01-.57-.01c-.198 0-.52.074-.792.372c-.273.297-1.04 1.016-1.04 2.479c0 1.462 1.064 2.875 1.213 3.074c.149.198 2.095 3.2 5.076 4.487c.71.306 1.263.489 1.694.625c.712.227 1.36.195 1.872.118c.57-.085 1.758-.719 2.006-1.413c.247-.694.247-1.289.173-1.413c-.074-.124-.272-.198-.57-.347Zm-5.422 7.403h-.004a9.87 9.87 0 0 1-5.032-1.378l-.36-.214l-3.742.982l.999-3.648l-.235-.374a9.861 9.861 0 0 1-1.511-5.26c.002-5.45 4.436-9.884 9.889-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.892 6.993c-.002 5.45-4.436 9.885-9.884 9.885Zm8.412-18.297A11.815 11.815 0 0 0 11.992 0C5.438 0 .102 5.335.1 11.892a11.864 11.864 0 0 0 1.587 5.945L0 24l6.304-1.654a11.881 11.881 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.892-11.893a11.821 11.821 0 0 0-3.48-8.413"
                         clip-rule="evenodd" />
-                </svg>Pedidos</a>
-            <a href="./pages/reservas.html" class="btnReserva"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                    role="img" style="vertical-align: -0.125em;" width="40" height="40"
-                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                    <path fill="black"
-                        d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
-                </svg>Reserva</a>
+              </svg>
+              <span class="mx-2">Pedidos</span> 
+            </a>
+          </div>
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+              <a href="./pages/reservas.html" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      role="img" style="vertical-align: -0.125em;" width="40" height="40"
+                      preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                  <path fill="black"
+                          d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
+                </svg>
+                <span class="mx-2">Reserva</span> 
+              </a>
+            </div>
+            
         </div>
+      </div>
+        
+      
     </section>
-    <section class="promoDelDia">
-        <h2>Burguer del Día</h2>
-        <img src="./img/comida/stacker.png" alt="">
-        <h2>Stacker</h2>
-        <div>
-            <h3>20% OFF</h3>
-        </div>
+    </main>
 
-    </section>
-    <section class="redesSociales">
-        <h2>Nuestras Redes</h2>
-        <div>
-            <a href="https://www.instagram.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" role="img" width="88" height="88" preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 1024 1024">
-                    <path fill="currentColor"
-                        d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z" />
-                </svg></a>
-            <!--icono instagram-->
-            <a href="https://www.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" role="img" width="70" height="70" preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 24 24">
-                    <path fill="currentColor" fill-rule="evenodd"
-                        d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666c.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067Z"
-                        clip-rule="evenodd" />
-                </svg></a>
-            <!--icono facebook-->
-        </div>
-    </section>
-
-    <!-- </main> -->
     <footer>
         <!--Footer contiene enlaces a las redes sociales-->
-        <div class="piePag">
-            <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="12" height="12"
-                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
-                    <path fill="currentColor"
-                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64zm5.4 670c-110 0-173.4-73.2-173.4-194.9v-52.3C344 364.2 407.4 290 517.3 290c94.3 0 162.7 60.7 162.7 147.4c0 2.6-2.1 4.7-4.7 4.7h-56.7c-4.2 0-7.6-3.2-8-7.4c-4-49.5-40-83.4-93-83.4c-65.3 0-102.1 48.5-102.1 135.5v52.6c0 85.7 36.9 133.6 102.1 133.6c52.8 0 88.7-31.7 93-77.8c.4-4.1 3.8-7.3 8-7.3h56.8c2.6 0 4.7 2.1 4.7 4.7c0 82.6-68.7 141.4-162.7 141.4z" />
+        <div class="container py-2 py-md-4">
+          <div class="row redes">
+            <div class="col-12 col-md-6 text-center text-md-start">
+              <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="12" height="12"
+                  preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                  <path fill="currentColor"
+                    d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64zm5.4 670c-110 0-173.4-73.2-173.4-194.9v-52.3C344 364.2 407.4 290 517.3 290c94.3 0 162.7 60.7 162.7 147.4c0 2.6-2.1 4.7-4.7 4.7h-56.7c-4.2 0-7.6-3.2-8-7.4c-4-49.5-40-83.4-93-83.4c-65.3 0-102.1 48.5-102.1 135.5v52.6c0 85.7 36.9 133.6 102.1 133.6c52.8 0 88.7-31.7 93-77.8c.4-4.1 3.8-7.3 8-7.3h56.8c2.6 0 4.7 2.1 4.7 4.7c0 82.6-68.7 141.4-162.7 141.4z" />
                 </svg>
-                Copyright <span id="nomEmpresa">El Burgues Food & Beer</span>. Todos los derechos reservados.
-
-            </span>
-            <div class="redes">
+                Copyright <span class="nomEmpresa">El Burgues Food & Beer</span>. Todos los derechos reservados.
+              </span>
+            </div>
+            <div class="col-12 col-md-6 my-3 my-md-0 text-center text-md-end">
+              <div>
                 <a href="https://www.instagram.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true" role="img" width="32" height="32" preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 24 24" class="insta">
+                        viewBox="0 0 24 24" class="insta text-black mx-2">
                         <path fill="currentColor" fill-rule="evenodd"
                             d="M7.465 1.066C8.638 1.012 9.012 1 12 1c2.988 0 3.362.013 4.534.066c1.172.053 1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12c0 2.988-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.396 5.396 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066c-2.988 0-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.397 5.397 0 0 1-1.949-1.268a5.392 5.392 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12c0-2.988.013-3.362.066-4.534c.053-1.172.24-1.972.511-2.672a5.396 5.396 0 0 1 1.27-1.948a5.392 5.392 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511Zm8.98 1.98c-1.16-.053-1.508-.064-4.445-.064c-2.937 0-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.412 3.412 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445c0 2.937.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064c2.938 0 3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445c0-2.937-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.413 3.413 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379Zm-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986ZM8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996Zm10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89Z"
                             clip-rule="evenodd" />
@@ -197,18 +254,22 @@
                 <!--icono instagram-->
                 <a href="https://www.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true" role="img" width="30" height="30" preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 24 24" class="face">
+                        viewBox="0 0 24 24" class="face text-black mx-2">
                         <path fill="currentColor" fill-rule="evenodd"
                             d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666c.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067Z"
                             clip-rule="evenodd" />
                     </svg></a>
                 <!--icono facebook-->
             </div>
+            </div>
+          </div>
         </div>
-        <p>Desarrollado por Darío Orquera</p>
+
+        <p class="container-fluid text-center text-white desarrollo py-2 m-0">Desarrollado por Darío Orquera</p>
     </footer>
+
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
