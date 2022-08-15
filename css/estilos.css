@@ -20,6 +20,9 @@ a {
     font-weight: 500;
     text-decoration: none;
 }
+
+/*************       css pagina Index    ****************/
+/*************       css Header    ****************/
 .nav-link{
     transition: all 1s;
 }
@@ -35,6 +38,8 @@ a {
     animation: swing; /* se utilizo animate.css para esta animacion*/
     animation-duration: 1s;
 }
+
+/*************       css Main     ****************/
 .imgCarrusel{
     width: 100%;
     height: 100vh;
@@ -122,12 +127,6 @@ a {
     background-color: white; 
     transform: scale(1.15);   
 }
-footer{
-    background-color: #FCC703;
-}
-footer .desarrollo{
-    background-color: #77600f;
-}
 .nomEmpresa{
     font-family: Pattaya, sans-serif;
 }
@@ -142,6 +141,15 @@ footer .desarrollo{
     transform: scale(1.5) rotate(5deg);
     color: rgb(224, 89, 236) !important; 
 }
+/*************       css Footer     ****************/
+footer{
+    background-color: #FCC703;
+}
+footer .desarrollo{
+    background-color: #77600f;
+}
+
+/*************       css pagina Comida y Bebida     ****************/
 .mainComida{
     background-image: url(../img/fondoComida.jpg);
     background-size: contain;
@@ -155,14 +163,14 @@ footer .desarrollo{
     background-attachment: fixed;
     padding-top: 8rem;
 }
+
+/************    css pagina GALERIA        ************/
 .mainGaleria{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondoGaleria.jpg);
     background-size:cover;
     background-position: center;
     padding-top: 8rem;
 }
-
-/************       GALERIA        ************/
 .gridGaleria{
     display: grid;
     grid-template-areas: 
@@ -250,6 +258,7 @@ footer .desarrollo{
 }
 /*************          fin de Galeria      ****************/
 
+/*************       css pagina Nostros     ****************/
 .mainNosotros{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 16.54%, #FDC619 83.85%), url(../img/fondoNosotros.jpg);
     background-size: cover;
@@ -259,6 +268,8 @@ footer .desarrollo{
 .justificar{
     text-align: justify;
 }
+
+/*************       css pagina Reservas     ****************/
 .mainReservas {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondoReservas.jpg);
     background-size:cover;
