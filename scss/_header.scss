@@ -2,8 +2,8 @@
     transition: all 1s;
 }
 .nav-link:hover{
-    color: #FCC703 !important;
-    border-bottom: 1px solid #FCC703;
+    color: $principal !important;
+    border-bottom: 1px solid $principal;
 }
 .logoPrincipal{
     height: 4rem;

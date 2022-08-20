@@ -67,17 +67,17 @@
     background-position: center;
     background-attachment: fixed;
     article{
-        color: #FCC703;
+        color: $principal;
     }
 }
 
 .botones div a{
     display: flex;
     height: 2rem;
-    color: black;
+    color: $negro;
     padding: 2rem 3rem;
     margin: 0 1rem;
-    background-color: #FCC703;
+    background-color: $principal;
     border-radius: 1rem;
     font-size: 1.5rem;
     align-items: center;
@@ -85,7 +85,7 @@
     transition: background-color 1s, transform 1s; 
 }
 .botones a:hover{
-    background-color: white; 
+    background-color: $blanco; 
     transform: scale(1.15);   
 }
 .nomEmpresa{
@@ -95,7 +95,7 @@
     transition: all 0.5s;
 }
 .face:hover{
-    color: blue !important;
+    color: $secundario !important;
     transform: scale(1.5) rotate(5deg);
 }
 .insta:hover{
