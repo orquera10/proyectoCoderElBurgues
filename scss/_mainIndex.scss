@@ -1,0 +1,104 @@
+.imgCarrusel{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+.logoCarrusel{
+    width: 8rem;
+    height: 8rem;
+    margin-top: 23rem;
+    animation: swing; /* se utilizo animate.css para esta animacion*/
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+.seccionEventos{
+    background-image: url(../img/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.secPromoDia{
+    background-image: url(../img/fondoPromo.jpg);
+    background-position: center;
+    background-size: cover;
+    img{
+        animation: palpitar 1.6s linear infinite alternate;
+    }
+}
+@keyframes palpitar{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.descuento{
+    background-color: red;
+    border-top-left-radius: 100%;
+    box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+    h3{
+        font-weight: 500;
+        position: relative;
+        top: 0.7rem;
+        left: 0.5rem;
+        text-shadow: 0px 0px 8px rgba(0,0,0,0.8);
+    }
+}
+
+.secRedes{
+    background-image: url(../img/redesFondo.jpg);
+    background-position: center;
+    background-size: cover;
+    svg{
+        transition: all 0.5s;
+    };
+    svg:hover{
+        transform: scale(1.5) rotate(360deg);
+    }
+}
+
+.seccion3{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/banner4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    article{
+        color: #FCC703;
+    }
+}
+
+.botones div a{
+    display: flex;
+    height: 2rem;
+    color: black;
+    padding: 2rem 3rem;
+    margin: 0 1rem;
+    background-color: #FCC703;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 1s, transform 1s; 
+}
+.botones a:hover{
+    background-color: white; 
+    transform: scale(1.15);   
+}
+.nomEmpresa{
+    font-family: Pattaya, sans-serif;
+}
+.redes a svg{
+    transition: all 0.5s;
+}
+.face:hover{
+    color: blue !important;
+    transform: scale(1.5) rotate(5deg);
+}
+.insta:hover{
+    transform: scale(1.5) rotate(5deg);
+    color: rgb(224, 89, 236) !important; 
+}

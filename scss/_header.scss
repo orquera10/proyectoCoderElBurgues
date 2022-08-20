@@ -1,0 +1,15 @@
+.nav-link{
+    transition: all 1s;
+}
+.nav-link:hover{
+    color: #FCC703 !important;
+    border-bottom: 1px solid #FCC703;
+}
+.logoPrincipal{
+    height: 4rem;
+    transition: all 1s;
+}
+.logoPrincipal:hover{
+    animation: swing; /* se utilizo animate.css para esta animacion*/
+    animation-duration: 1s;
+}

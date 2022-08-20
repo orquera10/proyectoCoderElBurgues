@@ -1,282 +1,288 @@
-@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Quicksand:wght@300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Quicksand:wght@300;400;500&display=swap");
 /* css general header -> logo + nav , footer*/
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-html{
-    background-color: black;
+
+html {
+  background-color: black;
 }
-h1,h2,h3{
-    font-family: Pattaya, sans-serif;
+
+h1, h2, h3 {
+  font-family: Pattaya, sans-serif;
 }
-p,span{
-    font-family: Quicksand, sans-serif;
-    font-weight: 500;
+
+p, span {
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
 }
+
 a {
-    font-family: Quicksand, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-/*************       css pagina Index    ****************/
-/*************       css Header    ****************/
-.nav-link{
-    transition: all 1s;
-}
-.nav-link:hover{
-    color: #FCC703 !important;
-    border-bottom: 1px solid #FCC703;
-}
-.logoPrincipal{
-    height: 4rem;
-    transition: all 1s;
-}
-.logoPrincipal:hover{
-    animation: swing; /* se utilizo animate.css para esta animacion*/
-    animation-duration: 1s;
+.nav-link {
+  transition: all 1s;
 }
 
-/*************       css Main     ****************/
-.imgCarrusel{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
-}
-.logoCarrusel{
-    width: 8rem;
-    height: 8rem;
-    margin-top: 23rem;
-    animation: swing; /* se utilizo animate.css para esta animacion*/
-    animation-delay: 0.5s;
-    animation-duration: 1s;
-}
-.seccionEventos{
-    background-image: url(../img/banner3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.secPromoDia{
-    background-image: url(../img/fondoPromo.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.secPromoDia img{
-    animation: palpitar 1.6s linear infinite alternate;
-}
-@keyframes palpitar{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-.descuento{
-    background-color: red;
-    border-top-left-radius: 100%;
-    box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
-}
-.descuento h3{
-    font-weight: 500;
-    position: relative;
-    top: 0.7rem;
-    left: 0.5rem;
-    text-shadow: 0px 0px 8px rgba(0,0,0,0.8);
-}
-.secRedes{
-    background-image: url(../img/redesFondo.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.secRedes svg{
-    transition: all 0.5s;
-}
-.secRedes svg:hover{
-    transform: scale(1.5) rotate(360deg);
-}
-.seccion3{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/banner4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.seccion3 article{
-    color: #FCC703;
-}
-.botones div a{
-    display: flex;
-    height: 2rem;
-    color: black;
-    padding: 2rem 3rem;
-    margin: 0 1rem;
-    background-color: #FCC703;
-    border-radius: 1rem;
-    font-size: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 1s, transform 1s; 
-}
-.botones a:hover{
-    background-color: white; 
-    transform: scale(1.15);   
-}
-.nomEmpresa{
-    font-family: Pattaya, sans-serif;
-}
-.redes a svg{
-    transition: all 0.5s;
-}
-.face:hover{
-    color: blue !important;
-    transform: scale(1.5) rotate(5deg);
-}
-.insta:hover{
-    transform: scale(1.5) rotate(5deg);
-    color: rgb(224, 89, 236) !important; 
-}
-/*************       css Footer     ****************/
-footer{
-    background-color: #FCC703;
-}
-footer .desarrollo{
-    background-color: #77600f;
+.nav-link:hover {
+  color: #FCC703 !important;
+  border-bottom: 1px solid #FCC703;
 }
 
-/*************       css pagina Comida y Bebida     ****************/
-.mainComida{
-    background-image: url(../img/fondoComida.jpg);
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: center;
-    padding-top: 8rem;
+.logoPrincipal {
+  height: 4rem;
+  transition: all 1s;
 }
+
+.logoPrincipal:hover {
+  animation: swing; /* se utilizo animate.css para esta animacion*/
+  animation-duration: 1s;
+}
+
+.imgCarrusel {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.logoCarrusel {
+  width: 8rem;
+  height: 8rem;
+  margin-top: 23rem;
+  animation: swing; /* se utilizo animate.css para esta animacion*/
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+}
+
+.seccionEventos {
+  background-image: url(../img/banner3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.secPromoDia {
+  background-image: url(../img/fondoPromo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.secPromoDia img {
+  animation: palpitar 1.6s linear infinite alternate;
+}
+
+@keyframes palpitar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.descuento {
+  background-color: red;
+  border-top-left-radius: 100%;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
+}
+.descuento h3 {
+  font-weight: 500;
+  position: relative;
+  top: 0.7rem;
+  left: 0.5rem;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+.secRedes {
+  background-image: url(../img/redesFondo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.secRedes svg {
+  transition: all 0.5s;
+}
+.secRedes svg:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+
+.seccion3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/banner4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.seccion3 article {
+  color: #FCC703;
+}
+
+.botones div a {
+  display: flex;
+  height: 2rem;
+  color: black;
+  padding: 2rem 3rem;
+  margin: 0 1rem;
+  background-color: #FCC703;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 1s, transform 1s;
+}
+
+.botones a:hover {
+  background-color: white;
+  transform: scale(1.15);
+}
+
+.nomEmpresa {
+  font-family: Pattaya, sans-serif;
+}
+
+.redes a svg {
+  transition: all 0.5s;
+}
+
+.face:hover {
+  color: blue !important;
+  transform: scale(1.5) rotate(5deg);
+}
+
+.insta:hover {
+  transform: scale(1.5) rotate(5deg);
+  color: rgb(224, 89, 236) !important;
+}
+
+footer {
+  background-color: #FCC703;
+}
+footer .desarrollo {
+  background-color: #77600f;
+}
+
+.mainComida {
+  background-image: url(../img/fondoComida.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 8rem;
+}
+
 .mainBebida {
-    background-image: url(../img/fondoBebida.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 8rem;
+  background-image: url(../img/fondoBebida.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 8rem;
 }
 
-/************    css pagina GALERIA        ************/
-.mainGaleria{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondoGaleria.jpg);
-    background-size:cover;
-    background-position: center;
-    padding-top: 8rem;
+.mainGaleria {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondoGaleria.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 8rem;
 }
-.gridGaleria{
-    display: grid;
-    grid-template-areas: 
-        "img1 img1 img2 img3 img3"
-        "img1 img1 img7 img7 img7"
-        "img4 img5 img7 img7 img7"
-        "img4 img5 img7 img7 img7"
-        "img4 img6 img9 img9 img9"
-        "img8 img8 img9 img9 img9"
-    ;
-    grid-template-columns: repeat(5,1fr);
-    grid-auto-rows: 10rem;
-    justify-content: center;
-    grid-gap: 1rem;
+
+.gridGaleria {
+  display: grid;
+  grid-template-areas: "img1 img1 img2 img3 img3" "img1 img1 img7 img7 img7" "img4 img5 img7 img7 img7" "img4 img5 img7 img7 img7" "img4 img6 img9 img9 img9" "img8 img8 img9 img9 img9";
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 10rem;
+  justify-content: center;
+  grid-gap: 1rem;
 }
-.gridGaleria img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 1rem;
-    transition: transform 0.5s;
+.gridGaleria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  transition: transform 0.5s;
 }
-.gridGaleria img:hover{
-    transform: scale(1.3);
-    z-index: 4;
+.gridGaleria img:hover {
+  transform: scale(1.3);
+  z-index: 4;
 }
-.img1{
-    grid-area: img1;
+
+.img1 {
+  grid-area: img1;
 }
-.img2{
-    grid-area: img2;
+
+.img2 {
+  grid-area: img2;
 }
-.img3{
-    grid-area: img3;
+
+.img3 {
+  grid-area: img3;
 }
-.img4{
-    grid-area: img4;
+
+.img4 {
+  grid-area: img4;
 }
-.img5{
-    grid-area: img5;
+
+.img5 {
+  grid-area: img5;
 }
-.img6{
-    grid-area: img6;
+
+.img6 {
+  grid-area: img6;
 }
-.img7{
-    grid-area: img7;
+
+.img7 {
+  grid-area: img7;
 }
-.img8{
-    grid-area: img8;
+
+.img8 {
+  grid-area: img8;
 }
-.img9{
-    grid-area: img9;
+
+.img9 {
+  grid-area: img9;
 }
+
 /******************* galeria tablet *******/
-@media only screen and (min-width: 600px) and (max-width: 1023px){
-    .gridGaleria{
-        display: grid;
-        grid-template-areas: 
-            "img6 img2 img3 img3"
-            "img1 img1 img4 img8"
-            "img5 img7 img4 img8"
-            "img9 img9 img9 img8"
-        ;
-        grid-gap: 0.5rem;
-        grid-template-columns: repeat(4,1fr);
-    }
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .gridGaleria {
+    display: grid;
+    grid-template-areas: "img6 img2 img3 img3" "img1 img1 img4 img8" "img5 img7 img4 img8" "img9 img9 img9 img8";
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
-
 /******************* galeria Mobile *******/
-@media only screen and (max-width: 599px){
-    .gridGaleria{
-        display: grid;
-        grid-template-areas: 
-            "img1 img2 img3"
-            "img8 img8 img5"
-            "img6 img7 img5"
-            "img4 img9 img9"
-        ;
-        padding: 2rem 0.5rem;
-        grid-auto-rows: 7rem;
-        grid-gap: 0.5rem;
-        grid-template-columns: repeat(3,1fr);
-    }
+@media only screen and (max-width: 599px) {
+  .gridGaleria {
+    display: grid;
+    grid-template-areas: "img1 img2 img3" "img8 img8 img5" "img6 img7 img5" "img4 img9 img9";
+    padding: 2rem 0.5rem;
+    grid-auto-rows: 7rem;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-/*************          fin de Galeria      ****************/
-
-/*************       css pagina Nostros     ****************/
-.mainNosotros{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 16.54%, #FDC619 83.85%), url(../img/fondoNosotros.jpg);
-    background-size: cover;
-    background-position: center;
-    padding-top: 8rem;
-}
-.justificar{
-    text-align: justify;
+.mainNosotros {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 16.54%, #FDC619 83.85%), url(../img/fondoNosotros.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 8rem;
 }
 
-/*************       css pagina Reservas     ****************/
+.justificar {
+  text-align: justify;
+}
+
 .mainReservas {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondoReservas.jpg);
-    background-size:cover;
-    background-position: center;
-    padding-top: 8rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondoReservas.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 8rem;
 }
-.mainReservas label,input,textarea{
-    font-family: Quicksand, sans-serif;
-    font-weight: 500;
+.mainReservas label, .mainReservas input, .mainReservas textarea {
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
 }
+
+/*# sourceMappingURL=estilos.css.map */

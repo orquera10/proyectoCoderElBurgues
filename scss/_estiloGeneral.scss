@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Quicksand:wght@300;400;500&display=swap');
+
+/* css general header -> logo + nav , footer*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: black;
+}
+h1,h2,h3{
+    font-family: Pattaya, sans-serif;
+}
+p,span{
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+}
+a {
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
