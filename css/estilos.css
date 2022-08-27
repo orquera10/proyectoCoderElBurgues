@@ -67,8 +67,8 @@ a {
 
 .secPromoDia {
   background-image: url(../img/fondoPromo.jpg);
-  background-position: center;
   background-size: cover;
+  background-position: center;
 }
 .secPromoDia img {
   animation: palpitar 1.6s linear infinite alternate;
@@ -100,18 +100,19 @@ a {
 
 .secRedes {
   background-image: url(../img/redesFondo.jpg);
-  background-position: center;
   background-size: cover;
+  background-position: center;
 }
-.secRedes svg {
+.secRedes i {
+  font-size: 5rem;
   transition: all 0.5s;
 }
-.secRedes svg:hover {
+.secRedes i:hover {
   transform: scale(1.5) rotate(360deg);
 }
 
 .seccion3 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/banner4.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/banner4.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -120,7 +121,7 @@ a {
   color: #FCC703;
 }
 
-.botones div a {
+.botones a {
   display: flex;
   height: 2rem;
   color: black;
@@ -133,17 +134,35 @@ a {
   justify-content: center;
   transition: background-color 1s, transform 1s;
 }
-
 .botones a:hover {
   background-color: white;
   transform: scale(1.15);
+}
+.botones i {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #FCC703;
+}
+footer .desarrollo {
+  background-color: #77600f;
 }
 
 .nomEmpresa {
   font-family: Pattaya, sans-serif;
 }
 
-.redes a svg {
+.copy {
+  font-size: 0.9em;
+  margin: 0 2px;
+}
+
+.redes a i {
+  font-size: 1.5rem;
+  color: black;
+  padding: 0 5px;
   transition: all 0.5s;
 }
 
@@ -157,33 +176,31 @@ a {
   color: rgb(224, 89, 236) !important;
 }
 
-footer {
-  background-color: #FCC703;
-}
-footer .desarrollo {
-  background-color: #77600f;
-}
-
 .mainComida {
   background-image: url(../img/fondoComida.jpg);
+  background-size: cover;
+  background-position: center;
   background-size: contain;
   background-attachment: fixed;
-  background-position: center;
   padding-top: 8rem;
 }
 
 .mainBebida {
   background-image: url(../img/fondoBebida.jpg);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   padding-top: 8rem;
 }
 
 .mainGaleria {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondoGaleria.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondoGaleria.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 8rem;
+}
+.mainGaleria h2 {
+  color: #FCC703 !important;
 }
 
 .gridGaleria {
@@ -264,10 +281,13 @@ footer .desarrollo {
   }
 }
 .mainNosotros {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 16.54%, #FDC619 83.85%), url(../img/fondoNosotros.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 16.54%, #FDC619 83.85%), url(../img/fondoNosotros.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 8rem;
+}
+.mainNosotros h2 {
+  color: #FCC703 !important;
 }
 
 .justificar {
@@ -275,7 +295,7 @@ footer .desarrollo {
 }
 
 .mainReservas {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondoReservas.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondoReservas.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 8rem;
@@ -283,6 +303,18 @@ footer .desarrollo {
 .mainReservas label, .mainReservas input, .mainReservas textarea {
   font-family: Quicksand, sans-serif;
   font-weight: 500;
+}
+.mainReservas .btnEnviar {
+  background-color: #FCC703;
+  border: solid 1px #FCC703;
+  transition: all 0.5s;
+}
+.mainReservas .btnEnviar:hover {
+  background-color: white;
+  border: solid 1px #FCC703;
+}
+.mainReservas h2 {
+  color: #FCC703 !important;
 }
 
 /*# sourceMappingURL=estilos.css.map */

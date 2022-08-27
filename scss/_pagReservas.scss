@@ -1,10 +1,22 @@
 .mainReservas {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondoReservas.jpg);
-    background-size:cover;
-    background-position: center;
+    @include fondo((linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondoReservas.jpg)));
     padding-top: 8rem;
     label,input,textarea{
         font-family: Quicksand, sans-serif;
         font-weight: 500;
+        
+    }
+    .btnEnviar{
+        background-color: $principal;
+        border: solid 1px $principal;
+        transition: all 0.5s;
+    }
+    .btnEnviar:hover{
+        background-color: $blanco;
+        border: solid 1px $principal;
+
+    }
+    h2{
+        color: $principal !important;
     }
 }

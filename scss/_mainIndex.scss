@@ -13,14 +13,10 @@
     animation-duration: 1s;
 }
 .seccionEventos{
-    background-image: url(../img/banner3.jpg);
-    background-size: cover;
-    background-position: center;
+    @include fondo(url(../img/banner3.jpg));
 }
 .secPromoDia{
-    background-image: url(../img/fondoPromo.jpg);
-    background-position: center;
-    background-size: cover;
+    @include fondo(url(../img/fondoPromo.jpg));
     img{
         animation: palpitar 1.6s linear infinite alternate;
     }
@@ -50,28 +46,26 @@
 }
 
 .secRedes{
-    background-image: url(../img/redesFondo.jpg);
-    background-position: center;
-    background-size: cover;
-    svg{
+    @include fondo(url(../img/redesFondo.jpg));
+    i{
+        font-size: 5rem;
         transition: all 0.5s;
     };
-    svg:hover{
+    i:hover{
         transform: scale(1.5) rotate(360deg);
     }
 }
 
 .seccion3{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/banner4.jpg);
-    background-size: cover;
-    background-position: center;
+    @include fondo((linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/banner4.jpg)));
     background-attachment: fixed;
     article{
         color: $principal;
     }
 }
 
-.botones div a{
+.botones {
+    a{
     display: flex;
     height: 2rem;
     color: $negro;
@@ -83,22 +77,14 @@
     align-items: center;
     justify-content: center;
     transition: background-color 1s, transform 1s; 
+    }
+    a:hover{
+        background-color: $blanco; 
+        transform: scale(1.15);   
+    }
+    i{
+        font-size: 2rem;
+        font-weight: 500;
+    }
 }
-.botones a:hover{
-    background-color: $blanco; 
-    transform: scale(1.15);   
-}
-.nomEmpresa{
-    font-family: Pattaya, sans-serif;
-}
-.redes a svg{
-    transition: all 0.5s;
-}
-.face:hover{
-    color: $secundario !important;
-    transform: scale(1.5) rotate(5deg);
-}
-.insta:hover{
-    transform: scale(1.5) rotate(5deg);
-    color: rgb(224, 89, 236) !important; 
-}
+

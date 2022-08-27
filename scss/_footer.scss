@@ -4,3 +4,24 @@ footer{
         background-color: #77600f;
     }
 }
+.nomEmpresa{
+    font-family: Pattaya, sans-serif;
+}
+.copy{
+    font-size: 0.9em;
+    margin: 0 2px;
+}
+.redes a i{
+    font-size: 1.5rem;
+    color: $negro;
+    padding: 0 5px;
+    transition: all 0.5s;
+}
+.face:hover{
+    color: $secundario !important;
+    transform: scale(1.5) rotate(5deg);
+}
+.insta:hover{
+    transform: scale(1.5) rotate(5deg);
+    color: rgb(224, 89, 236) !important; 
+}
