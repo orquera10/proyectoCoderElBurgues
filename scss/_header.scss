@@ -13,3 +13,13 @@
     animation: swing; /* se utilizo animate.css para esta animacion*/
     animation-duration: 1s;
 }
+.dropdown-menu{
+    background-color: $principal;
+}
+.dropdown-item{
+    transition: all 1s;
+}
+.dropdown-item:hover{
+    color: $principal;
+    background-color: $negro;
+}

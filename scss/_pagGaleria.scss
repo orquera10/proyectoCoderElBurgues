@@ -1,5 +1,5 @@
 .mainGaleria{
-    @include fondo((linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondoGaleria.jpg)));
+    @include fondo((linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoGaleria.jpg)));
     padding-top: 8rem;
     h2{
         color: $principal !important;
@@ -35,37 +35,5 @@
 @for $var from 1 to 10 {
     .img#{$var}{
         grid-area: img#{$var};
-    }
-}
-
-/******************* galeria tablet *******/
-@media only screen and (min-width: 600px) and (max-width: 1023px){
-    .gridGaleria{
-        display: grid;
-        grid-template-areas: 
-            "img6 img2 img3 img3"
-            "img1 img1 img4 img8"
-            "img5 img7 img4 img8"
-            "img9 img9 img9 img8"
-        ;
-        grid-gap: 0.5rem;
-        grid-template-columns: repeat(4,1fr);
-    }
-}
-
-/******************* galeria Mobile *******/
-@media only screen and (max-width: 599px){
-    .gridGaleria{
-        display: grid;
-        grid-template-areas: 
-            "img1 img2 img3"
-            "img8 img8 img5"
-            "img6 img7 img5"
-            "img4 img9 img9"
-        ;
-        padding: 2rem 0.5rem;
-        grid-auto-rows: 7rem;
-        grid-gap: 0.5rem;
-        grid-template-columns: repeat(3,1fr);
     }
 }

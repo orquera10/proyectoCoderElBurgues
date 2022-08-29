@@ -43,6 +43,19 @@ a {
   animation-duration: 1s;
 }
 
+.dropdown-menu {
+  background-color: #FCC703;
+}
+
+.dropdown-item {
+  transition: all 1s;
+}
+
+.dropdown-item:hover {
+  color: #FCC703;
+  background-color: black;
+}
+
 .imgCarrusel {
   width: 100%;
   height: 100vh;
@@ -60,13 +73,13 @@ a {
 }
 
 .seccionEventos {
-  background-image: url(../img/banner3.jpg);
+  background-image: url(../img/fondos/banner3.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .secPromoDia {
-  background-image: url(../img/fondoPromo.jpg);
+  background-image: url(../img/fondos/fondoPromo.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -99,7 +112,7 @@ a {
 }
 
 .secRedes {
-  background-image: url(../img/redesFondo.jpg);
+  background-image: url(../img/fondos/redesFondo.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -112,7 +125,7 @@ a {
 }
 
 .seccion3 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/banner4.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/fondos/banner4.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -121,26 +134,44 @@ a {
   color: #FCC703;
 }
 
-.botones a {
-  display: flex;
-  height: 2rem;
-  color: black;
-  padding: 2rem 3rem;
-  margin: 0 1rem;
-  background-color: #FCC703;
-  border-radius: 1rem;
-  font-size: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 1s, transform 1s;
-}
 .botones a:hover {
-  background-color: white;
   transform: scale(1.15);
 }
 .botones i {
   font-size: 2rem;
   font-weight: 500;
+}
+
+.boton, .botonReserva, .botonWP {
+  display: flex;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+
+.botonWP {
+  color: black;
+  background-color: #FCC703;
+  border: solid 2px #FCC703;
+}
+.botonWP:hover {
+  color: white;
+  background-color: green;
+  border: solid 2px green;
+}
+
+.botonReserva {
+  color: #FCC703;
+  border: solid 2px #FCC703;
+}
+.botonReserva:hover {
+  color: black;
+  background-color: #FCC703;
+  border: solid 2px #FCC703;
 }
 
 footer {
@@ -167,17 +198,17 @@ footer .desarrollo {
 }
 
 .face:hover {
-  color: blue !important;
+  color: blue;
   transform: scale(1.5) rotate(5deg);
 }
 
 .insta:hover {
+  color: rgb(224, 89, 236);
   transform: scale(1.5) rotate(5deg);
-  color: rgb(224, 89, 236) !important;
 }
 
 .mainComida {
-  background-image: url(../img/fondoComida.jpg);
+  background-image: url(../img/fondos/fondoComida.jpg);
   background-size: cover;
   background-position: center;
   background-size: contain;
@@ -186,7 +217,7 @@ footer .desarrollo {
 }
 
 .mainBebida {
-  background-image: url(../img/fondoBebida.jpg);
+  background-image: url(../img/fondos/fondoBebida.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -194,7 +225,7 @@ footer .desarrollo {
 }
 
 .mainGaleria {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondoGaleria.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoGaleria.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 8rem;
@@ -260,28 +291,8 @@ footer .desarrollo {
   grid-area: img9;
 }
 
-/******************* galeria tablet *******/
-@media only screen and (min-width: 600px) and (max-width: 1023px) {
-  .gridGaleria {
-    display: grid;
-    grid-template-areas: "img6 img2 img3 img3" "img1 img1 img4 img8" "img5 img7 img4 img8" "img9 img9 img9 img8";
-    grid-gap: 0.5rem;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-/******************* galeria Mobile *******/
-@media only screen and (max-width: 599px) {
-  .gridGaleria {
-    display: grid;
-    grid-template-areas: "img1 img2 img3" "img8 img8 img5" "img6 img7 img5" "img4 img9 img9";
-    padding: 2rem 0.5rem;
-    grid-auto-rows: 7rem;
-    grid-gap: 0.5rem;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 .mainNosotros {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 16.54%, #FDC619 83.85%), url(../img/fondoNosotros.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 16.54%, #FDC619 83.85%), url(../img/fondos/fondoNosotros.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 8rem;
@@ -291,11 +302,12 @@ footer .desarrollo {
 }
 
 .justificar {
-  text-align: justify;
+  text-align: left;
+  line-height: 30px;
 }
 
 .mainReservas {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondoReservas.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondos/fondoReservas.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 8rem;
@@ -315,6 +327,72 @@ footer .desarrollo {
 }
 .mainReservas h2 {
   color: #FCC703 !important;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .seccion3 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/fondos/banner4-tablet.jpg);
+  }
+  .mainBebida {
+    background-image: url(../img/fondos/fondoBebida-tablet.jpg);
+  }
+  .mainNosotros {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoNosotros-tablet.jpg);
+  }
+  .mainReservas {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoReservas-tablet.jpg);
+  }
+  /******************* galeria tablet *******/
+  .mainGaleria {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoGaleria-tablet.jpg);
+  }
+  .gridGaleria {
+    display: grid;
+    grid-template-areas: "img6 img2 img3 img3" "img1 img1 img4 img8" "img5 img7 img4 img8" "img9 img9 img9 img8";
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .justificar {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .seccionEventos {
+    background-image: url(../img/fondos/banner3-mobile.jpg);
+  }
+  .secPromoDia {
+    background-image: url(../img/fondos/fondoPromo-mobile.jpg);
+  }
+  .secRedes {
+    background-image: url(../img/fondos/redesFondo-mobile.jpg);
+  }
+  .seccion3 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/fondos/banner4-mobile.jpg);
+  }
+  .mainBebida {
+    background-image: url(../img/fondos/fondoBebida-mobile.jpg);
+  }
+  .mainNosotros {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoNosotros-mobile.jpg);
+  }
+  .mainReservas {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoReservas-tablet.jpg);
+  }
+  /******************* galeria Mobile *******/
+  .mainGaleria {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoGaleria-mobile.jpg);
+  }
+  .gridGaleria {
+    display: grid;
+    grid-template-areas: "img1 img2 img3" "img8 img8 img5" "img6 img7 img5" "img4 img9 img9";
+    padding: 2rem 0.5rem;
+    grid-auto-rows: 7rem;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .justificar {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

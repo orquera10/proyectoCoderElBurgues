@@ -1,5 +1,5 @@
 .mainReservas {
-    @include fondo((linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondoReservas.jpg)));
+    @include fondo((linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(253, 198, 25, 0.08) 100%), url(../img/fondos/fondoReservas.jpg)));
     padding-top: 8rem;
     label,input,textarea{
         font-family: Quicksand, sans-serif;

@@ -13,10 +13,10 @@
     animation-duration: 1s;
 }
 .seccionEventos{
-    @include fondo(url(../img/banner3.jpg));
+    @include fondo(url(../img/fondos/banner3.jpg));
 }
 .secPromoDia{
-    @include fondo(url(../img/fondoPromo.jpg));
+    @include fondo(url(../img/fondos/fondoPromo.jpg));
     img{
         animation: palpitar 1.6s linear infinite alternate;
     }
@@ -46,7 +46,7 @@
 }
 
 .secRedes{
-    @include fondo(url(../img/redesFondo.jpg));
+    @include fondo(url(../img/fondos/redesFondo.jpg));
     i{
         font-size: 5rem;
         transition: all 0.5s;
@@ -57,7 +57,7 @@
 }
 
 .seccion3{
-    @include fondo((linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/banner4.jpg)));
+    @include fondo((linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/fondos/banner4.jpg)));
     background-attachment: fixed;
     article{
         color: $principal;
@@ -65,26 +65,43 @@
 }
 
 .botones {
-    a{
-    display: flex;
-    height: 2rem;
-    color: $negro;
-    padding: 2rem 3rem;
-    margin: 0 1rem;
-    background-color: $principal;
-    border-radius: 1rem;
-    font-size: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 1s, transform 1s; 
-    }
     a:hover{
-        background-color: $blanco; 
         transform: scale(1.15);   
     }
     i{
         font-size: 2rem;
         font-weight: 500;
+    }
+}
+.boton {
+    display: flex;
+    height: 2rem;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+.botonWP{
+    @extend .boton;
+    color: $negro;
+    background-color: $principal;
+    border: solid 2px $principal;
+    &:hover{
+        color: $blanco;
+        background-color: green;
+        border: solid 2px green;
+    }
+}
+.botonReserva{
+    @extend .boton;
+    color: $principal;
+    border: solid 2px $principal;
+    &:hover{
+        color: $negro;
+        background-color: $principal;
+        border: solid 2px $principal;
     }
 }
 

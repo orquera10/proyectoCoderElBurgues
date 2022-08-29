@@ -1,0 +1,78 @@
+
+@media only screen and (min-width: 600px) and (max-width: 1023px){
+    .seccion3{
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/fondos/banner4-tablet.jpg);
+    }
+    .mainBebida{
+        background-image: url(../img/fondos/fondoBebida-tablet.jpg);
+    }
+    .mainNosotros{
+        background-image:  linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoNosotros-tablet.jpg);
+    }
+    .mainReservas{
+        background-image:  linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoReservas-tablet.jpg);
+    }
+    /******************* galeria tablet *******/
+    .mainGaleria{
+        background-image:  linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoGaleria-tablet.jpg);
+    }
+    .gridGaleria{
+        display: grid;
+        grid-template-areas: 
+            "img6 img2 img3 img3"
+            "img1 img1 img4 img8"
+            "img5 img7 img4 img8"
+            "img9 img9 img9 img8"
+        ;
+        grid-gap: 0.5rem;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .justificar{
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 599px){
+    .seccionEventos{
+        background-image: url(../img/fondos/banner3-mobile.jpg);
+    }
+    .secPromoDia{
+        background-image: url(../img/fondos/fondoPromo-mobile.jpg);
+    }
+    .secRedes{
+        background-image: url(../img/fondos/redesFondo-mobile.jpg);
+    }
+    .seccion3{
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/fondos/banner4-mobile.jpg);
+    }
+    .mainBebida{
+        background-image: url(../img/fondos/fondoBebida-mobile.jpg);
+    }
+    .mainNosotros{
+        background-image:  linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoNosotros-mobile.jpg);
+    }
+    .mainReservas{
+        background-image:  linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoReservas-tablet.jpg);
+    }
+    /******************* galeria Mobile *******/
+    .mainGaleria{
+        background-image:  linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoGaleria-mobile.jpg);
+    }
+    .gridGaleria{
+        display: grid;
+        grid-template-areas: 
+            "img1 img2 img3"
+            "img8 img8 img5"
+            "img6 img7 img5"
+            "img4 img9 img9"
+        ;
+        padding: 2rem 0.5rem;
+        grid-auto-rows: 7rem;
+        grid-gap: 0.5rem;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .justificar{
+        text-align: center;
+    }
+}

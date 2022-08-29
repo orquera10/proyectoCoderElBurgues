@@ -1,12 +1,12 @@
 .mainComida{
-    @include fondo(url(../img/fondoComida.jpg));
+    @include fondo(url(../img/fondos/fondoComida.jpg));
     background-size: contain;
     background-attachment: fixed;
     padding-top: 8rem;
     
 }
 .mainBebida {
-    @include fondo(url(../img/fondoBebida.jpg));
+    @include fondo(url(../img/fondos/fondoBebida.jpg));
     background-attachment: fixed;
     padding-top: 8rem;
     
