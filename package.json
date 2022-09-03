@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/orquera10/proyectoCoderElBurgues/issues"
   },
-  "homepage": "https://github.com/orquera10/proyectoCoderElBurgues#readme"
+  "homepage": "https://github.com/orquera10/proyectoCoderElBurgues#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }

@@ -215,6 +215,12 @@ footer .desarrollo {
   background-attachment: fixed;
   padding-top: 8rem;
 }
+.mainComida img {
+  max-width: 500px;
+}
+.mainComida div article div {
+  max-width: 500px;
+}
 
 .mainBebida {
   background-image: url(../img/fondos/fondoBebida.jpg);
