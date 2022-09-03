@@ -7,21 +7,44 @@
         h2{
             margin: 2rem 0rem;
             font-size: 20rem;
-            z-index: 0;
+            text-shadow: 0px 11px 11px $blanco;
+            cursor: pointer;
             transition: all 1.5s;
         };
+        p{
+            visibility: hidden;
+            color: $blanco;
+            text-shadow: 0px 0px 3px $negro;
+            transition: all 2s;
+        }
         h2:hover{
             transform: scale(1.01);
             z-index: 3;
         };
+        h2:hover ~ p{
+            visibility: visible;
+            transform: scale(1.5);
+            z-index: 4;
+        };
     }
+}
+.tocar{
+    width: 40px;
+    top: 11rem;
+    visibility: hidden;
+}
+.stoutColor{
+    color: $negro;
+}
+.scottishColor{
+    color: #B84A4A;
 }
 .beer1{
      padding-top: 4rem;
 }
 .golden{
     max-width: 40rem ;
-    bottom: -2rem;
+    bottom: -4rem;
     left: 2rem;
 }
 
@@ -32,12 +55,12 @@
 }
 .scottish{
     max-width: 30rem;
-    bottom: -2rem;
+    bottom: -3rem;
     left: 2rem;
 }
 
 .beerTable{
     max-height: 30rem;
-    bottom: -6rem;
+    bottom: -10rem;
     left: 0;
 }

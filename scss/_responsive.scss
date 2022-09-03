@@ -33,11 +33,21 @@
     }
     @for $var3 from 1 to 4 {
         .beer#{$var3}{
-            height: 55vh;
+            height: 700px;
             h2{
             font-size: 10rem;
+            text-shadow: 0px 8px 8px #FFFFFF;
+            };
+            h2:hover ~ .tocar{
+                visibility: hidden
             };
         }
+    }
+    .tocar{
+        top: 15rem;
+        visibility: visible;
+        animation: fadeOut 3s infinite; /* se utilizo animate.css para esta animacion*/
+        z-index: 5;
     }
     .golden{
         width: 20rem !important;
@@ -53,6 +63,11 @@
         width: 20rem !important;
         bottom: -4rem;
         left: 2rem;
+    }
+    .beerTable{
+        max-height: 30rem;
+        bottom: -6rem;
+        left: 0;
     }
 }
 
@@ -101,13 +116,27 @@
     }
     @for $var4 from 1 to 4 {
         .beer#{$var4}{
-            height: 550px;
+            height: 600px;
             h2{
                 font-size: 6rem;
+                text-shadow: 0px 6px 6px #FFFFFF;
+            };
+            p{
+                transition: all 1s;
+            }
+            h2:hover ~ p{
+                transform: scale(1.1);
+            };
+            h2:hover ~ .tocar{
+                visibility: hidden
             };
         }
     }
-
+    .tocar{
+        visibility: visible;
+        animation: fadeOut 3s infinite; /* se utilizo animate.css para esta animacion*/
+        z-index: 5;
+    }
     .golden{
         width: 20rem !important;
         bottom: -1rem;

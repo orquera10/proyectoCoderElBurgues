@@ -235,12 +235,24 @@ footer .desarrollo {
 .beer1 h2 {
   margin: 2rem 0rem;
   font-size: 20rem;
-  z-index: 0;
+  text-shadow: 0px 11px 11px white;
+  cursor: pointer;
   transition: all 1.5s;
+}
+.beer1 p {
+  visibility: hidden;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+  transition: all 2s;
 }
 .beer1 h2:hover {
   transform: scale(1.01);
   z-index: 3;
+}
+.beer1 h2:hover ~ p {
+  visibility: visible;
+  transform: scale(1.5);
+  z-index: 4;
 }
 
 .beer2 {
@@ -254,12 +266,24 @@ footer .desarrollo {
 .beer2 h2 {
   margin: 2rem 0rem;
   font-size: 20rem;
-  z-index: 0;
+  text-shadow: 0px 11px 11px white;
+  cursor: pointer;
   transition: all 1.5s;
+}
+.beer2 p {
+  visibility: hidden;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+  transition: all 2s;
 }
 .beer2 h2:hover {
   transform: scale(1.01);
   z-index: 3;
+}
+.beer2 h2:hover ~ p {
+  visibility: visible;
+  transform: scale(1.5);
+  z-index: 4;
 }
 
 .beer3 {
@@ -273,12 +297,38 @@ footer .desarrollo {
 .beer3 h2 {
   margin: 2rem 0rem;
   font-size: 20rem;
-  z-index: 0;
+  text-shadow: 0px 11px 11px white;
+  cursor: pointer;
   transition: all 1.5s;
+}
+.beer3 p {
+  visibility: hidden;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+  transition: all 2s;
 }
 .beer3 h2:hover {
   transform: scale(1.01);
   z-index: 3;
+}
+.beer3 h2:hover ~ p {
+  visibility: visible;
+  transform: scale(1.5);
+  z-index: 4;
+}
+
+.tocar {
+  width: 40px;
+  top: 11rem;
+  visibility: hidden;
+}
+
+.stoutColor {
+  color: black;
+}
+
+.scottishColor {
+  color: #B84A4A;
 }
 
 .beer1 {
@@ -287,7 +337,7 @@ footer .desarrollo {
 
 .golden {
   max-width: 40rem;
-  bottom: -2rem;
+  bottom: -4rem;
   left: 2rem;
 }
 
@@ -299,13 +349,13 @@ footer .desarrollo {
 
 .scottish {
   max-width: 30rem;
-  bottom: -2rem;
+  bottom: -3rem;
   left: 2rem;
 }
 
 .beerTable {
   max-height: 30rem;
-  bottom: -6rem;
+  bottom: -10rem;
   left: 0;
 }
 
@@ -441,22 +491,40 @@ footer .desarrollo {
     text-align: center;
   }
   .beer1 {
-    height: 55vh;
+    height: 700px;
   }
   .beer1 h2 {
     font-size: 10rem;
+    text-shadow: 0px 8px 8px #FFFFFF;
+  }
+  .beer1 h2:hover ~ .tocar {
+    visibility: hidden;
   }
   .beer2 {
-    height: 55vh;
+    height: 700px;
   }
   .beer2 h2 {
     font-size: 10rem;
+    text-shadow: 0px 8px 8px #FFFFFF;
+  }
+  .beer2 h2:hover ~ .tocar {
+    visibility: hidden;
   }
   .beer3 {
-    height: 55vh;
+    height: 700px;
   }
   .beer3 h2 {
     font-size: 10rem;
+    text-shadow: 0px 8px 8px #FFFFFF;
+  }
+  .beer3 h2:hover ~ .tocar {
+    visibility: hidden;
+  }
+  .tocar {
+    top: 15rem;
+    visibility: visible;
+    animation: fadeOut 3s infinite; /* se utilizo animate.css para esta animacion*/
+    z-index: 5;
   }
   .golden {
     width: 20rem !important;
@@ -472,6 +540,11 @@ footer .desarrollo {
     width: 20rem !important;
     bottom: -4rem;
     left: 2rem;
+  }
+  .beerTable {
+    max-height: 30rem;
+    bottom: -6rem;
+    left: 0;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -512,22 +585,57 @@ footer .desarrollo {
     text-align: center;
   }
   .beer1 {
-    height: 550px;
+    height: 600px;
   }
   .beer1 h2 {
     font-size: 6rem;
+    text-shadow: 0px 6px 6px #FFFFFF;
+  }
+  .beer1 p {
+    transition: all 1s;
+  }
+  .beer1 h2:hover ~ p {
+    transform: scale(1.1);
+  }
+  .beer1 h2:hover ~ .tocar {
+    visibility: hidden;
   }
   .beer2 {
-    height: 550px;
+    height: 600px;
   }
   .beer2 h2 {
     font-size: 6rem;
+    text-shadow: 0px 6px 6px #FFFFFF;
+  }
+  .beer2 p {
+    transition: all 1s;
+  }
+  .beer2 h2:hover ~ p {
+    transform: scale(1.1);
+  }
+  .beer2 h2:hover ~ .tocar {
+    visibility: hidden;
   }
   .beer3 {
-    height: 550px;
+    height: 600px;
   }
   .beer3 h2 {
     font-size: 6rem;
+    text-shadow: 0px 6px 6px #FFFFFF;
+  }
+  .beer3 p {
+    transition: all 1s;
+  }
+  .beer3 h2:hover ~ p {
+    transform: scale(1.1);
+  }
+  .beer3 h2:hover ~ .tocar {
+    visibility: hidden;
+  }
+  .tocar {
+    visibility: visible;
+    animation: fadeOut 3s infinite; /* se utilizo animate.css para esta animacion*/
+    z-index: 5;
   }
   .golden {
     width: 20rem !important;
