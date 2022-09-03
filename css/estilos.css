@@ -242,7 +242,7 @@ footer .desarrollo {
 .beer1 p {
   visibility: hidden;
   color: white;
-  text-shadow: 0px 0px 3px black;
+  text-shadow: 0px 0px 6px black;
   transition: all 2s;
 }
 .beer1 h2:hover {
@@ -273,7 +273,7 @@ footer .desarrollo {
 .beer2 p {
   visibility: hidden;
   color: white;
-  text-shadow: 0px 0px 3px black;
+  text-shadow: 0px 0px 6px black;
   transition: all 2s;
 }
 .beer2 h2:hover {
@@ -304,7 +304,7 @@ footer .desarrollo {
 .beer3 p {
   visibility: hidden;
   color: white;
-  text-shadow: 0px 0px 3px black;
+  text-shadow: 0px 0px 6px black;
   transition: all 2s;
 }
 .beer3 h2:hover {
@@ -324,7 +324,7 @@ footer .desarrollo {
 }
 
 .tocar2 {
-  top: 9rem;
+  top: 7rem;
 }
 
 .stoutColor {
@@ -531,7 +531,7 @@ footer .desarrollo {
     z-index: 5;
   }
   .tocar2 {
-    top: 12rem;
+    top: 11rem;
   }
   .golden {
     width: 20rem !important;
@@ -646,7 +646,7 @@ footer .desarrollo {
   }
   .golden {
     width: 20rem !important;
-    bottom: -1rem;
+    bottom: -2rem;
     left: -4rem;
   }
   .stout {
@@ -656,7 +656,7 @@ footer .desarrollo {
   }
   .scottish {
     width: 20rem !important;
-    bottom: -4rem;
+    bottom: -8rem;
     left: -3rem;
   }
   .beerTable {
