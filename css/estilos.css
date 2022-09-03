@@ -319,8 +319,12 @@ footer .desarrollo {
 
 .tocar {
   width: 40px;
-  top: 11rem;
+  top: 13rem;
   visibility: hidden;
+}
+
+.tocar2 {
+  top: 9rem;
 }
 
 .stoutColor {
@@ -521,10 +525,13 @@ footer .desarrollo {
     visibility: hidden;
   }
   .tocar {
-    top: 15rem;
+    top: 16rem;
     visibility: visible;
     animation: fadeOut 3s infinite; /* se utilizo animate.css para esta animacion*/
     z-index: 5;
+  }
+  .tocar2 {
+    top: 12rem;
   }
   .golden {
     width: 20rem !important;

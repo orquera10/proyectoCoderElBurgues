@@ -44,10 +44,13 @@
         }
     }
     .tocar{
-        top: 15rem;
+        top: 16rem;
         visibility: visible;
         animation: fadeOut 3s infinite; /* se utilizo animate.css para esta animacion*/
         z-index: 5;
+    }
+    .tocar2{
+        top: 12rem;
     }
     .golden{
         width: 20rem !important;
