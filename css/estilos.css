@@ -234,7 +234,7 @@ footer .desarrollo {
 }
 .beer1 h2 {
   margin: 2rem 0rem;
-  font-size: 20rem;
+  font-size: 19rem;
   text-shadow: 0px 11px 11px white;
   cursor: pointer;
   transition: all 1.5s;
@@ -265,7 +265,7 @@ footer .desarrollo {
 }
 .beer2 h2 {
   margin: 2rem 0rem;
-  font-size: 20rem;
+  font-size: 19rem;
   text-shadow: 0px 11px 11px white;
   cursor: pointer;
   transition: all 1.5s;
@@ -296,7 +296,7 @@ footer .desarrollo {
 }
 .beer3 h2 {
   margin: 2rem 0rem;
-  font-size: 20rem;
+  font-size: 19rem;
   text-shadow: 0px 11px 11px white;
   cursor: pointer;
   transition: all 1.5s;
@@ -534,18 +534,15 @@ footer .desarrollo {
     top: 11rem;
   }
   .golden {
-    width: 20rem !important;
     bottom: -2rem;
     left: 2rem;
   }
   .stout {
-    width: 18rem !important;
     bottom: -2rem;
     right: 0rem;
   }
   .scottish {
-    width: 20rem !important;
-    bottom: -4rem;
+    bottom: -6rem;
     left: 2rem;
   }
   .beerTable {
