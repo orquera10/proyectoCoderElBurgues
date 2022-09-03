@@ -224,6 +224,91 @@ footer .desarrollo {
   padding-top: 8rem;
 }
 
+.beer1 {
+  background-image: url(../img/fondos/fondoBeer01.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #FCC703;
+  overflow: hidden;
+}
+.beer1 h2 {
+  margin: 2rem 0rem;
+  font-size: 20rem;
+  z-index: 0;
+  transition: all 1.5s;
+}
+.beer1 h2:hover {
+  transform: scale(1.01);
+  z-index: 3;
+}
+
+.beer2 {
+  background-image: url(../img/fondos/fondoBeer02.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #FCC703;
+  overflow: hidden;
+}
+.beer2 h2 {
+  margin: 2rem 0rem;
+  font-size: 20rem;
+  z-index: 0;
+  transition: all 1.5s;
+}
+.beer2 h2:hover {
+  transform: scale(1.01);
+  z-index: 3;
+}
+
+.beer3 {
+  background-image: url(../img/fondos/fondoBeer03.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #FCC703;
+  overflow: hidden;
+}
+.beer3 h2 {
+  margin: 2rem 0rem;
+  font-size: 20rem;
+  z-index: 0;
+  transition: all 1.5s;
+}
+.beer3 h2:hover {
+  transform: scale(1.01);
+  z-index: 3;
+}
+
+.beer1 {
+  padding-top: 4rem;
+}
+
+.golden {
+  max-width: 40rem;
+  bottom: -2rem;
+  left: 2rem;
+}
+
+.stout {
+  max-width: 30rem;
+  bottom: -2rem;
+  right: 0rem;
+}
+
+.scottish {
+  max-width: 30rem;
+  bottom: -2rem;
+  left: 2rem;
+}
+
+.beerTable {
+  max-height: 30rem;
+  bottom: -6rem;
+  left: 0;
+}
+
 .mainGaleria {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 10.68%, #FDC619 91.55%), url(../img/fondos/fondoGaleria.jpg);
   background-size: cover;
@@ -355,6 +440,39 @@ footer .desarrollo {
   .justificar {
     text-align: center;
   }
+  .beer1 {
+    height: 55vh;
+  }
+  .beer1 h2 {
+    font-size: 10rem;
+  }
+  .beer2 {
+    height: 55vh;
+  }
+  .beer2 h2 {
+    font-size: 10rem;
+  }
+  .beer3 {
+    height: 55vh;
+  }
+  .beer3 h2 {
+    font-size: 10rem;
+  }
+  .golden {
+    width: 20rem !important;
+    bottom: -2rem;
+    left: 2rem;
+  }
+  .stout {
+    width: 18rem !important;
+    bottom: -2rem;
+    right: 0rem;
+  }
+  .scottish {
+    width: 20rem !important;
+    bottom: -4rem;
+    left: 2rem;
+  }
 }
 @media only screen and (max-width: 599px) {
   .seccionEventos {
@@ -392,6 +510,43 @@ footer .desarrollo {
   }
   .justificar {
     text-align: center;
+  }
+  .beer1 {
+    height: 550px;
+  }
+  .beer1 h2 {
+    font-size: 6rem;
+  }
+  .beer2 {
+    height: 550px;
+  }
+  .beer2 h2 {
+    font-size: 6rem;
+  }
+  .beer3 {
+    height: 550px;
+  }
+  .beer3 h2 {
+    font-size: 6rem;
+  }
+  .golden {
+    width: 20rem !important;
+    bottom: -1rem;
+    left: -4rem;
+  }
+  .stout {
+    width: 16rem !important;
+    bottom: -1rem;
+    right: 0rem;
+  }
+  .scottish {
+    width: 20rem !important;
+    bottom: -4rem;
+    left: -3rem;
+  }
+  .beerTable {
+    bottom: -2rem;
+    left: 0;
   }
 }
 

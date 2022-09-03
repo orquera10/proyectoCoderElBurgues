@@ -1,4 +1,5 @@
 
+
 @media only screen and (min-width: 600px) and (max-width: 1023px){
     .seccion3{
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/fondos/banner4-tablet.jpg);
@@ -29,6 +30,29 @@
     }
     .justificar{
         text-align: center;
+    }
+    @for $var3 from 1 to 4 {
+        .beer#{$var3}{
+            height: 55vh;
+            h2{
+            font-size: 10rem;
+            };
+        }
+    }
+    .golden{
+        width: 20rem !important;
+        bottom: -2rem;
+        left: 2rem;
+    }
+    .stout{
+        width: 18rem !important;
+        bottom: -2rem;
+        right: 0rem;
+    }
+    .scottish{
+        width: 20rem !important;
+        bottom: -4rem;
+        left: 2rem;
     }
 }
 
@@ -74,5 +98,33 @@
     }
     .justificar{
         text-align: center;
+    }
+    @for $var4 from 1 to 4 {
+        .beer#{$var4}{
+            height: 550px;
+            h2{
+                font-size: 6rem;
+            };
+        }
+    }
+
+    .golden{
+        width: 20rem !important;
+        bottom: -1rem;
+        left: -4rem;
+    }
+    .stout{
+        width: 16rem !important;
+        bottom: -1rem;
+        right: 0rem;
+    }
+    .scottish{
+        width: 20rem !important;
+        bottom: -4rem;
+        left: -3rem;
+    }
+    .beerTable{
+        bottom: -2rem;
+        left: 0;
     }
 }
