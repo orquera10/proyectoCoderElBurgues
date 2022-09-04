@@ -1,14 +1,15 @@
-.mainComida{
+.mainComida {
     @include fondo(url(../img/fondos/fondoComida.jpg));
     background-size: contain;
     background-attachment: fixed;
     padding-top: 8rem;
-    img{
+    img {
         max-width: 500px
     }
-    div{
-        article{
-            div{
+
+    div {
+        article {
+            div {
                 max-width: 500px;
             }
         }
