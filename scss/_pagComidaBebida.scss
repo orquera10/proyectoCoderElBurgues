@@ -20,5 +20,16 @@
     @include fondo(url(../img/fondos/fondoBebida.jpg));
     background-attachment: fixed;
     padding-top: 8rem;
-    
+    img {
+        max-width: 500px
+    }
+
+    div {
+        article {
+            div {
+                max-width: 500px
+            }
+        }
+    }
 }
+    

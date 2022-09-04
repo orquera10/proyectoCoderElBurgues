@@ -229,6 +229,12 @@ footer .desarrollo {
   background-attachment: fixed;
   padding-top: 8rem;
 }
+.mainBebida img {
+  max-width: 500px;
+}
+.mainBebida div article div {
+  max-width: 500px;
+}
 
 .beer1 {
   background-image: url(../img/fondos/fondoBeer01.jpg);
@@ -665,6 +671,9 @@ footer .desarrollo {
   .beerTable {
     bottom: -2rem;
     left: 0;
+  }
+  .menuRapido div div {
+    width: 100%;
   }
 }
 
