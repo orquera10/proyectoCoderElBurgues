@@ -174,6 +174,13 @@ a {
   border: solid 2px #FCC703;
 }
 
+.tituloSeccion1 {
+  text-shadow: 0px 11px 11px black;
+  animation: pulse; /* se utilizo animate.css para esta animacion*/
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+}
+
 footer {
   background-color: #FCC703;
 }
@@ -207,33 +214,28 @@ footer .desarrollo {
   transform: scale(1.5) rotate(5deg);
 }
 
+.pagComidaBebida, .mainBebida, .mainComida {
+  background-attachment: fixed;
+  padding-top: 8rem;
+}
+.pagComidaBebida img, .mainBebida img, .mainComida img {
+  max-width: 500px;
+}
+.pagComidaBebida div article div, .mainBebida div article div, .mainComida div article div {
+  max-width: 500px;
+}
+
 .mainComida {
   background-image: url(../img/fondos/fondoComida.jpg);
   background-size: cover;
   background-position: center;
   background-size: contain;
-  background-attachment: fixed;
-  padding-top: 8rem;
-}
-.mainComida img {
-  max-width: 500px;
-}
-.mainComida div article div {
-  max-width: 500px;
 }
 
 .mainBebida {
   background-image: url(../img/fondos/fondoBebida.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  padding-top: 8rem;
-}
-.mainBebida img {
-  max-width: 500px;
-}
-.mainBebida div article div {
-  max-width: 500px;
 }
 
 .beer1 {

@@ -104,4 +104,10 @@
         border: solid 2px $principal;
     }
 }
+.tituloSeccion1{
+    text-shadow: 0px 11px 11px $negro;
+    animation: pulse; /* se utilizo animate.css para esta animacion*/
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
 

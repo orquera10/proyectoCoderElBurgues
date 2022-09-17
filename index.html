@@ -26,7 +26,7 @@
     <script src="https://kit.fontawesome.com/7f3ec427f5.js" crossorigin="anonymous"></script>
     <!-- animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <!-- animaciones de aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
@@ -35,8 +35,8 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
         <div class="container">
   
-          <a href="./index.html" class="navbar-brand">
-            <img src="./img/logoBlanco.svg" alt="logo Burgues" class="logoPrincipal">
+          <a class="navbar-brand" href="./index.html">
+            <img class="logoPrincipal" src="./img/logoBlanco.svg" alt="logo Burgues en color blanco" >
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,6 @@
                   <li><a class="dropdown-item" href="./pages/comida.html">Burguers</a></li>
                   <li><a class="dropdown-item" href="./pages/beer.html">Beers</a></li>
                   <li><a class="dropdown-item" href="./pages/bebida.html">Drinks</a></li>
-                  
                 </ul>
               </li>
               <li class="nav-item">
@@ -76,7 +75,7 @@
     <main>
       <!--En la primera seccion implementara un carrusel de imagenes con productos del Bar-->
       <section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel slide" id="carouselExampleIndicators" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
@@ -90,43 +89,55 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="position-absolute top-0 start-50 translate-middle">
-                <img src="./img/logoBlanco.svg" alt="logo Burgues" class="logoCarrusel">
+                <img class="logoCarrusel" src="./img/logoBlanco.svg" alt="logo Burgues en blanco">
               </div>
               <picture>
                 <source media="(max-width: 599px)" srcset="./img/banner/banner1-01-mobile.jpg">
                 <source media="(max-width: 1023px)" srcset="./img/banner/banner1-01-tablet.jpg">
-                <img src="./img/banner/banner1-01.jpg" class=" imgCarrusel" alt="...">
+                <img class=" imgCarrusel" src="./img/banner/banner1-01.jpg" alt="imagen de tres hamburguesas">
               </picture>
+              <div class="position-absolute bottom-0 start-50 translate-middle">
+                <h2 class="h1 tituloSeccion1 text-white text-center mb-4">Bienvenido, a tú Lugar</h2>
+              </div>
             </div>
             <div class="carousel-item">
               <div class="position-absolute top-0 start-50 translate-middle">
-                <img src="./img/logoBlanco.svg" alt="logo Burgues" class="logoCarrusel">
+                <img class="logoCarrusel" src="./img/logoBlanco.svg" alt="logo Burgues en blanco">
               </div>
               <picture>
                 <source media="(max-width: 599px)" srcset="./img/banner/banner1-02-mobile.jpg">
                 <source media="(max-width: 1023px)" srcset="./img/banner/banner1-02-tablet.jpg">
-                <img src="./img/banner/banner1-02.jpg" class=" imgCarrusel" alt="...">
+                <img class=" imgCarrusel" src="./img/banner/banner1-02.jpg" alt="imagen de hamburguesas con papas fritas">
               </picture>
+              <div class="position-absolute bottom-0 start-50 translate-middle">
+                <h2 class="h1 tituloSeccion1 text-white text-center mb-4">La mayor calidad, Siempre</h2>
+              </div>
             </div>
             <div class="carousel-item">
               <div class="position-absolute top-0 start-50 translate-middle">
-                <img src="./img/logoBlanco.svg" alt="logo Burgues" class="logoCarrusel">
+                <img class="logoCarrusel" src="./img/logoBlanco.svg" alt="logo Burgues en blanco">
               </div>
               <picture>
                 <source media="(max-width: 599px)" srcset="./img/banner/banner1-03-mobile.jpg">
                 <source media="(max-width: 1023px)" srcset="./img/banner/banner1-03-tablet.jpg">
-                <img src="./img/banner/banner1-03.jpg" class=" imgCarrusel" alt="...">
+                <img class=" imgCarrusel" src="./img/banner/banner1-03.jpg" alt="imagen de barman sirviendo vaso de cerveza">
               </picture>
+              <div class="position-absolute bottom-0 start-50 translate-middle">
+                <h2 class="h1 tituloSeccion1 text-white text-center mb-4">Fabricamos la Mejor Cerveza</h2>
+              </div>
             </div>
             <div class="carousel-item">
               <div class="position-absolute top-0 start-50 translate-middle">
-                <img src="./img/logoBlanco.svg" alt="logo Burgues" class="logoCarrusel">
+                <img class="logoCarrusel" src="./img/logoBlanco.svg" alt="logo Burgues en blanco">
               </div>
               <picture>
                 <source media="(max-width: 599px)" srcset="./img/banner/banner1-04-mobile.jpg">
                 <source media="(max-width: 1023px)" srcset="./img/banner/banner1-04-tablet.jpg">
-                <img src="./img/banner/banner1-04.jpg" class=" imgCarrusel" alt="...">
+                <img class=" imgCarrusel" src="./img/banner/banner1-04.jpg" alt="imagen de dos botellas de bebidas alcoholicas y un trago">
               </picture>
+              <div class="position-absolute bottom-0 start-50 translate-middle">
+                <h2 class="h1 tituloSeccion1 text-white text-center mb-4">Los mejores Tragos, para Compartir</h2>
+              </div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -146,7 +157,7 @@
       <section class="container-fluid text-center m-0 p-0 ">
         <div class="row m-0 h-100 min-vh-100">
           <div class="col-12 col-lg-7 p-4 d-flex align-items-center justify-content-center seccionEventos">
-            <div id="carouselExampleIndicators-2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel slide" id="carouselExampleIndicators-2" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="0" class="active"
                   aria-current="true" aria-label="Slide 1"></button>
@@ -266,8 +277,6 @@
   
           </div>
         </div>
-  
-  
       </section>
     </main>
   

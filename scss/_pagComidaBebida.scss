@@ -1,23 +1,4 @@
-.mainComida {
-    @include fondo(url(../img/fondos/fondoComida.jpg));
-    background-size: contain;
-    background-attachment: fixed;
-    padding-top: 8rem;
-    img {
-        max-width: 500px
-    }
-
-    div {
-        article {
-            div {
-                max-width: 500px;
-            }
-        }
-    }
-}
-
-.mainBebida {
-    @include fondo(url(../img/fondos/fondoBebida.jpg));
+.pagComidaBebida{
     background-attachment: fixed;
     padding-top: 8rem;
     img {
@@ -31,5 +12,15 @@
             }
         }
     }
+}
+.mainComida {
+    @include fondo(url(../img/fondos/fondoComida.jpg));
+    @extend .pagComidaBebida;
+    background-size: contain; 
+}
+
+.mainBebida {
+    @include fondo(url(../img/fondos/fondoBebida.jpg));
+    @extend .pagComidaBebida;
 }
     
